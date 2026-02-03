@@ -2,10 +2,51 @@
   <head><title>Nordiskt nätverk för språkmodeller</title></head>
 <body>
 <h1>Nordiskt nätverk för språkmodeller för språk i Norden / Kielimalleja Pohjolan kielille</h1>
+  <b>Ett projekt för Nordiska ministerrådet hos New Nordic AI</b>
  <h2>Kontakt</h2>
   Jussi Karlgren
- <h2>Programförklaring</h2>
+ <h2>Programförklaring: Hur får man en språkmodell att bete sig som folk?</h2>
+
+En språkmodell är en grammatik, ett lexikon och en hel del förekomststatistik hopbakade till ett beräkningsstöd som går att använda till att generera strängar med. En sådan modell duger inte som samtalspart. För att modellen ska kunna reagera på indata och til exempel svara på frågor måste den byggas in i ett interaktivt system av något slag och *instruktionstränas* genom att rimliga exempel på gott beteende förevisas för den.
+
+Sådana instruktionsträningsmängder ger systemet och dess modell exempel på hur ett system kan svara på frågor, översätta eller sammanfatta texter, men också på olika stilsorter och vilka frågor som inte bör besvaras alls, vilka svar som är otillbörliga och hur artigt beteende ter sig.
+
+  <pre>
+{
+  "instruction": "Respond with a brief, sincere apology.",
+  "input": "You gave me the wrong information earlier.",
+  "response": "You're right—thanks for pointing that out. I’m sorry about the confusion, and I appreciate your patience."
+}
+</pre>
+
+De flesta sådana mängder har utvecklats av samma organisationer som byggt de största modellerna och har sedan översatts, oftast genom maskinell översättning, till andra språk i världen.
+
+  <pre>
+{
+  "instruction": "Respond empathetically without giving medical advice.",
+  "input": "I feel anxious all the time and can’t focus.",
+  "response": "That sounds really difficult, and you’re not alone in feeling this way. It might help to talk with someone you trust or a qualified professional about what you’re experiencing."
+}
+</pre>
+
+Detta ger en viss slagsida åt systemens beteenden. De här givna engelskspråkiga exemplen visar hur de internationellt mest bekanta modellerna tränats och för var och en av oss som använt dem så klingar språkbruket bekant. Detta är även märkbart för interaktion med andra språk: de svensk- eller finskspråkiga modellerna beter sig snarlikt.
+
+  <pre>
+{
+  "instruction": "Acknowledge uncertainty without sounding evasive.",
+  "input": "Are you 100% sure this is correct?",
+  "response": "Based on the information available, this is my best understanding, though I could be mistaken. If you’d like, we can double-check specific details."
+}
+</pre>
+  
+Detta projekt är avsett att skapa lokalt relevanta instruktionsmängder för att hjälpa skapa modeller och system som språkligt sett kan bete sig rimligt. Detta är en insats som måste inbegripa språkvetenskaplig och språkvårdande kompetens och förankras i språksamfundet. Den kan delvis använda befintliga samlade data från arkiv och medier, men kräver också nyinsamling och därefter redaktionell bearbetning och strukturering.
+
+Den här sortens insats kan förväntas vara användbar även för framtida generationer språkmodeller: den kommer inte vara bunden till dagens beräkningsarkitektur vars livslängd är begränsad. Resultaten kommer göras offentligt tillgänliga för både forskning och teknikutveckling.
+
+
+
 <h2>Arbetsplan</h2>
+  
 
   <h2>Projektparter</h2>
   <h3>Språkvårdande parter (TBC)</h3>
