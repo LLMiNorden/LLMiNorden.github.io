@@ -1,0 +1,17 @@
+Todo
+
+1) Kravspecifikation
+ - Format
+ - Volym
+ - Variation
+ - Typologi
+
+2) Styrgrupp
+   Teknikgrupp
+   Språkvårdsgrupp
+
+3) Samla och skapa data
+
+4) Evaluering
+
+5) EU-koppling OELLM, Josiane
